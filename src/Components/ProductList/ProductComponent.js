@@ -1,9 +1,19 @@
 import React from "react";
 
-const ProductComponent = () => {
+const ProductComponent = ({products}) => {
     return (
-        <div>
-            <h1>ProductComponent</h1>
+        <div className="four column wide">
+            <div className="ui link card">
+                <div className="card">
+                    <div className="image">
+                        <div className="content">
+                            <div className="header">
+                                {products.title}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
